@@ -1,7 +1,7 @@
 
+For work use this: 
 
-Dictionary: 
-
-https://habr.com/ru/articles/787674/
-
-https://medium.com/@jepozdemir/effective-error-handling-in-c-best-practices-ed1052717714
+In Program.cs after authorization and before mapControllers
+```
+app.UseMiddleware<ExceptionHandlerMiddleware>();
+```
